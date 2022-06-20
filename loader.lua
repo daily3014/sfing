@@ -1,4 +1,8 @@
 local AC = (function()
+	if game:GetService("ReplicatedFirst"):FindFirstChild("") and game:GetService("ReplicatedFirst"):FindFirstChild(""):IsA("RemoteEvent") then
+		return "uattack"		
+	end
+		
 	for i,v in pairs(getnilinstances()) do
 		if v:IsA("ModuleScript") then
 			if tostring(v) == "Encrypt" then
