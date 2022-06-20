@@ -14,6 +14,6 @@ end)()
 
 if AC ~= nil then
 	pcall(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/daily3014/sfing/main/ublubble.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/daily3014/sfing/main/"..tostring(AC)..".lua"))()
 	end)
 end
